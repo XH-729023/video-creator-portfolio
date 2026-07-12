@@ -1,0 +1,88 @@
+[
+  {
+    "name": "desktop",
+    "errors": [],
+    "state": {
+      "canvas": [
+        1440,
+        1000
+      ],
+      "coloredPixels": 0,
+      "h1": {
+        "left": 57.59375,
+        "right": 1382.40625,
+        "top": 486.46875,
+        "bottom": 872.8125
+      },
+      "viewport": [
+        1440,
+        1000
+      ],
+      "images": [
+        {
+          "ok": true,
+          "w": 2200
+        },
+        {
+          "ok": true,
+          "w": 1800
+        },
+        {
+          "ok": true,
+          "w": 1200
+        },
+        {
+          "ok": true,
+          "w": 1200
+        },
+        {
+          "ok": true,
+          "w": 1800
+        }
+      ]
+    }
+  },
+  {
+    "name": "mobile",
+    "errors": [],
+    "state": {
+      "canvas": [
+        390,
+        844
+      ],
+      "coloredPixels": 0,
+      "h1": {
+        "left": 18,
+        "right": 372,
+        "top": 564.21875,
+        "bottom": 728.9375
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "images": [
+        {
+          "ok": true,
+          "w": 2200
+        },
+        {
+          "ok": true,
+          "w": 1800
+        },
+        {
+          "ok": true,
+          "w": 1200
+        },
+        {
+          "ok": true,
+          "w": 1200
+        },
+        {
+          "ok": true,
+          "w": 1800
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "name": "video-creator-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@vitejs/plugin-basic-ssl": "latest",
+    "gsap": "latest",
+    "lucide": "latest",
+    "three": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.1"
+  }
+}
