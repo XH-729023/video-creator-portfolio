@@ -3,32 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="VOIDFRAME - 导演与动态影像创作者作品集" />
-    <title>VOIDFRAME — Motion Director</title>
-    <link rel="icon" href="data:," />
+    <meta name="description" content="VOIDFRAME - 上海导演、剪辑师与动态影像创作者作品集" />
+    <meta name="theme-color" content="#080908" />
+    <title>VOIDFRAME - Motion Director</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23080908'/%3E%3Cpath d='M12 15h10l10 34 10-34h10L37 55H27z' fill='%23d8ff00'/%3E%3C/svg%3E" />
   </head>
   <body>
+    <a class="skip-link" href="#content">跳到主要内容</a>
     <canvas id="fluid" aria-hidden="true"></canvas>
     <div class="noise" aria-hidden="true"></div>
 
     <header class="topbar">
       <a class="brand magnetic" href="#top" aria-label="返回首页">VOID<span>/</span>FRAME</a>
-      <div class="status"><i></i> AVAILABLE FOR SELECTED PROJECTS</div>
-      <button class="menu-btn magnetic" aria-label="打开菜单" aria-expanded="false"><span></span><span></span></button>
+      <div class="status"><i aria-hidden="true"></i> AVAILABLE FOR SELECTED PROJECTS</div>
+      <button
+        class="menu-btn magnetic"
+        type="button"
+        aria-label="打开菜单"
+        aria-controls="site-menu"
+        aria-expanded="false"
+      ><span></span><span></span></button>
     </header>
 
-    <nav class="menu" aria-hidden="true">
-      <a href="#work">01 / 作品</a><a href="#about">02 / 关于</a><a href="#contact">03 / 联系</a>
+    <nav class="menu" id="site-menu" aria-hidden="true" inert>
+      <a href="#about"><small>01</small>关于</a>
+      <a href="#work"><small>02</small>作品</a>
+      <a href="#services"><small>03</small>能力</a>
+      <a href="#contact"><small>04</small>联系</a>
     </nav>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-media" data-speed="0.85">
-          <img src="./assets/hero.jpg" alt="现场音乐影像创作画面" loading="eager" />
+    <main id="content">
+      <section class="hero" id="top">
+        <div class="hero-media">
+          <img src="./assets/hero.jpg" alt="现场音乐影像创作画面" fetchpriority="high" />
         </div>
         <div class="hero-shade"></div>
         <div class="hero-copy">
-          <p class="kicker reveal">DIRECTOR · EDITOR · VISUAL ARTIST</p>
+          <p class="kicker reveal">DIRECTOR / EDITOR / VISUAL ARTIST</p>
           <h1 aria-label="Frames that refuse to stand still">
             <span class="line"><span>FRAMES THAT</span></span>
             <span class="line offset"><span>REFUSE TO</span></span>
@@ -39,73 +50,125 @@
             <a href="#work" class="round-link magnetic" aria-label="浏览作品"><i data-lucide="arrow-down-right"></i></a>
           </div>
         </div>
-        <div class="frame-code">VF—26 / SHANGHAI</div>
+        <div class="frame-code">VF-26 / SHANGHAI</div>
       </section>
 
       <section class="manifesto" id="about">
-        <div class="section-tag">[ 01 — 声明 ]</div>
-        <p class="manifesto-text">我不拍摄<span>内容</span>。我设计情绪的轨迹，让节奏、光线与声音在同一帧里发生碰撞。</p>
+        <div class="section-tag">[ 01 - 关于 ]</div>
+        <div class="manifesto-inner">
+          <p class="manifesto-text">我不拍摄<span>内容</span>。我设计情绪的轨迹，让节奏、光线与声音在同一帧里发生碰撞。</p>
+          <div class="about-copy">
+            <p>VOIDFRAME 是一间位于上海的独立影像工作室，专注音乐、时尚与品牌叙事。从概念、导演到剪辑和调色，我们用一套连贯的视觉语言完成每个项目。</p>
+            <dl>
+              <div><dt>BASE</dt><dd>Shanghai / Worldwide</dd></div>
+              <div><dt>FOCUS</dt><dd>Music / Fashion / Culture</dd></div>
+              <div><dt>AVAILABLE</dt><dd>Selected projects in 2026</dd></div>
+            </dl>
+          </div>
+        </div>
         <div class="orbit-word" aria-hidden="true">IMAGE / SOUND / MOTION / IMAGE / SOUND / MOTION /</div>
       </section>
 
       <section class="works" id="work">
         <div class="work-head">
-          <div class="section-tag">[ 02 — 精选作品 ]</div>
-          <p>2023—2026</p>
+          <div class="section-tag">[ 02 - 精选作品 ]</div>
+          <p>2024-2026 / 04 PROJECTS</p>
         </div>
 
         <article class="project project-wide">
-          <a href="#contact" class="project-media cursor-view">
+          <button class="project-media cursor-view" type="button" data-project="neon" aria-haspopup="dialog" aria-label="查看 NEON PULSE 项目详情">
             <img src="./assets/neon.jpg" alt="NEON PULSE 音乐现场" loading="lazy" />
-            <div class="project-index">01</div>
-          </a>
-          <div class="project-meta"><h2>NEON PULSE</h2><p>MUSIC FILM · 02:14</p><span>2026</span></div>
+            <span class="project-index">01</span>
+            <span class="project-action">OPEN CASE</span>
+          </button>
+          <div class="project-meta"><h2>NEON PULSE</h2><p>MUSIC FILM / 02:14</p><span>2026</span></div>
         </article>
 
         <div class="project-grid">
           <article class="project project-tall">
-            <a href="#contact" class="project-media cursor-view">
+            <button class="project-media cursor-view" type="button" data-project="afterimage" aria-haspopup="dialog" aria-label="查看 AFTERIMAGE 项目详情">
               <img src="./assets/afterimage.jpg" alt="AFTERIMAGE 人物短片" loading="lazy" />
-              <div class="project-index">02</div>
-            </a>
-            <div class="project-meta"><h2>AFTERIMAGE</h2><p>FASHION FILM · 00:47</p><span>2025</span></div>
+              <span class="project-index">02</span>
+              <span class="project-action">OPEN CASE</span>
+            </button>
+            <div class="project-meta"><h2>AFTERIMAGE</h2><p>FASHION FILM / 00:47</p><span>2025</span></div>
           </article>
-          <article class="project project-square drift">
-            <a href="#contact" class="project-media cursor-view">
+          <article class="project project-square">
+            <button class="project-media cursor-view" type="button" data-project="liminal" aria-haspopup="dialog" aria-label="查看 LIMINAL 项目详情">
               <img src="./assets/liminal.jpg" alt="LIMINAL 时尚影像" loading="lazy" />
-              <div class="project-index">03</div>
-            </a>
-            <div class="project-meta"><h2>LIMINAL</h2><p>CAMPAIGN · 01:08</p><span>2025</span></div>
+              <span class="project-index">03</span>
+              <span class="project-action">OPEN CASE</span>
+            </button>
+            <div class="project-meta"><h2>LIMINAL</h2><p>CAMPAIGN / 01:08</p><span>2025</span></div>
           </article>
         </div>
 
         <article class="project project-wide last-project">
-          <a href="#contact" class="project-media cursor-view">
+          <button class="project-media cursor-view" type="button" data-project="dawn" aria-haspopup="dialog" aria-label="查看 SYNTHETIC DAWN 项目详情">
             <img src="./assets/dawn.jpg" alt="SYNTHETIC DAWN 电影影像" loading="lazy" />
-            <div class="project-index">04</div>
-          </a>
-          <div class="project-meta"><h2>SYNTHETIC DAWN</h2><p>SHORT FILM · 08:32</p><span>2024</span></div>
+            <span class="project-index">04</span>
+            <span class="project-action">OPEN CASE</span>
+          </button>
+          <div class="project-meta"><h2>SYNTHETIC DAWN</h2><p>SHORT FILM / 08:32</p><span>2024</span></div>
         </article>
       </section>
 
-      <section class="services">
-        <div class="section-tag">[ 03 — 能力 ]</div>
+      <section class="services" id="services">
+        <div class="section-tag">[ 03 - 能力 ]</div>
         <div class="service-list">
-          <div><span>01</span><h3>创意 / 导演</h3><i data-lucide="move-up-right"></i></div>
-          <div><span>02</span><h3>拍摄 / 灯光</h3><i data-lucide="move-up-right"></i></div>
-          <div><span>03</span><h3>剪辑 / 调色</h3><i data-lucide="move-up-right"></i></div>
-          <div><span>04</span><h3>动态 / 视觉</h3><i data-lucide="move-up-right"></i></div>
+          <div><span>01</span><h3>创意 / 导演</h3><p>概念开发、视觉提案、现场导演</p></div>
+          <div><span>02</span><h3>拍摄 / 灯光</h3><p>摄影设计、灯光规划、现场执行</p></div>
+          <div><span>03</span><h3>剪辑 / 调色</h3><p>叙事剪辑、声音节奏、色彩管理</p></div>
+          <div><span>04</span><h3>动态 / 视觉</h3><p>片头设计、动态图形、交付适配</p></div>
         </div>
+      </section>
+
+      <section class="process" aria-labelledby="process-title">
+        <div class="process-head">
+          <div class="section-tag">[ WORKFLOW ]</div>
+          <h2 id="process-title">FROM FIRST SIGNAL<br />TO FINAL FRAME.</h2>
+        </div>
+        <ol>
+          <li><span>01</span><h3>DISCOVER</h3><p>明确受众、语气和作品需要留下的感受。</p></li>
+          <li><span>02</span><h3>DESIGN</h3><p>将概念转化为脚本、镜头与完整视觉系统。</p></li>
+          <li><span>03</span><h3>DELIVER</h3><p>完成拍摄与后期，并适配每一个发布场景。</p></li>
+        </ol>
       </section>
 
       <footer id="contact">
         <p class="footer-kicker">HAVE A STORY THAT NEEDS A PULSE?</p>
         <a class="contact-link" href="mailto:hello@voidframe.studio"><span>LET'S MAKE</span><span>SOMETHING MOVE</span></a>
-        <div class="footer-bottom"><p>© 2026 VOIDFRAME STUDIO</p><div><a href="#">INSTAGRAM</a><a href="#">VIMEO</a><a href="#">BEHANCE</a></div><button class="to-top magnetic" aria-label="返回顶部"><i data-lucide="arrow-up"></i></button></div>
+        <div class="contact-meta">
+          <p>新项目、合作与制作咨询<br /><a href="mailto:hello@voidframe.studio">hello@voidframe.studio</a></p>
+          <button class="copy-email" type="button" data-email="hello@voidframe.studio"><i data-lucide="copy"></i><span>复制邮箱</span></button>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 VOIDFRAME STUDIO</p>
+          <div><a href="#work">SELECTED WORK</a><a href="#about">ABOUT</a><a href="mailto:hello@voidframe.studio">EMAIL</a></div>
+          <button class="to-top magnetic" type="button" aria-label="返回顶部"><i data-lucide="arrow-up"></i></button>
+        </div>
       </footer>
     </main>
 
-    <div class="cursor" aria-hidden="true"><span>VIEW</span></div>
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-shell">
+        <button class="dialog-close" type="button" aria-label="关闭项目详情"><i data-lucide="x"></i></button>
+        <div class="dialog-media"><img alt="" /></div>
+        <div class="dialog-content">
+          <p class="dialog-kicker"></p>
+          <h2 id="dialog-title"></h2>
+          <p class="dialog-intro"></p>
+          <dl class="dialog-facts"></dl>
+          <div class="dialog-story">
+            <div><h3>THE IDEA</h3><p data-field="idea"></p></div>
+            <div><h3>THE APPROACH</h3><p data-field="approach"></p></div>
+          </div>
+          <a class="dialog-cta" href="mailto:hello@voidframe.studio?subject=Project%20inquiry">START A PROJECT <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+    </dialog>
+
+    <div class="cursor" aria-hidden="true"><span>OPEN</span></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
